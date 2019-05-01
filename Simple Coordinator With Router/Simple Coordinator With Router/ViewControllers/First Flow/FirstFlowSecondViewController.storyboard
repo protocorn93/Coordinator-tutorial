@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RSS-8Q-Bz6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Flow Second View Controller-->
+        <scene sceneID="Pb1-ne-HIT">
+            <objects>
+                <viewController storyboardIdentifier="FirstFlowSecondViewController" id="RSS-8Q-Bz6" customClass="FirstFlowSecondViewController" customModule="Simple_Coordinator_With_Router" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k5l-Mk-eWN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPK-vo-Rf0">
+                                <rect key="frame" x="26.5" y="297.5" width="322" height="72"/>
+                                <string key="text">First Flow
+Second ViewController</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2R9-Mx-6kG">
+                                <rect key="frame" x="161" y="419.5" width="53" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleNextButton:" destination="RSS-8Q-Bz6" eventType="touchUpInside" id="Gi4-jX-dBj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2R9-Mx-6kG" firstAttribute="centerX" secondItem="k5l-Mk-eWN" secondAttribute="centerX" id="cjo-z5-Tce"/>
+                            <constraint firstItem="jPK-vo-Rf0" firstAttribute="centerX" secondItem="k5l-Mk-eWN" secondAttribute="centerX" id="gmA-E4-lDK"/>
+                            <constraint firstItem="2R9-Mx-6kG" firstAttribute="top" secondItem="jPK-vo-Rf0" secondAttribute="bottom" constant="50" id="h9C-2X-hR2"/>
+                            <constraint firstItem="jPK-vo-Rf0" firstAttribute="centerY" secondItem="k5l-Mk-eWN" secondAttribute="centerY" id="mdD-JZ-BzY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rcS-bH-ycU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LP9-EQ-jCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="39"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D2q-dv-JWW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Uco-i8-MpD">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="D2q-dv-JWW" customClass="ViewController" customModule="Simple_Coordinators" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cM7-Q0-wci">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9T-lo-8yG">
+                                <rect key="frame" x="172.5" y="318.5" width="30" height="30"/>
+                                <state key="normal" title="Buy"/>
+                                <connections>
+                                    <action selector="handleBuyButton:" destination="D2q-dv-JWW" eventType="touchUpInside" id="Nhv-lT-b0c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xg4-ZV-esg">
+                                <rect key="frame" x="164.5" y="385" width="46" height="30"/>
+                                <state key="normal" title="Create"/>
+                                <connections>
+                                    <action selector="handleCreateButton:" destination="D2q-dv-JWW" eventType="touchUpInside" id="zRP-N3-wGB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result From ViewControllers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTa-hE-7KA">
+                                <rect key="frame" x="79" y="156.5" width="217" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gTa-hE-7KA" firstAttribute="centerX" secondItem="cM7-Q0-wci" secondAttribute="centerX" id="0aa-js-yBz"/>
+                            <constraint firstItem="Xg4-ZV-esg" firstAttribute="centerY" secondItem="cM7-Q0-wci" secondAttribute="centerY" multiplier="1.2" id="4pq-b9-3KV"/>
+                            <constraint firstItem="M9T-lo-8yG" firstAttribute="centerY" secondItem="cM7-Q0-wci" secondAttribute="centerY" id="6i6-j2-RQJ"/>
+                            <constraint firstItem="gTa-hE-7KA" firstAttribute="centerY" secondItem="cM7-Q0-wci" secondAttribute="centerY" multiplier="0.5" id="9Me-Ik-DMB"/>
+                            <constraint firstItem="M9T-lo-8yG" firstAttribute="centerX" secondItem="cM7-Q0-wci" secondAttribute="centerX" id="YXx-GJ-G1I"/>
+                            <constraint firstItem="Xg4-ZV-esg" firstAttribute="centerX" secondItem="cM7-Q0-wci" secondAttribute="centerX" id="k11-Eg-T36"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="prn-4y-ZSD"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="gTa-hE-7KA" id="vcH-bw-X8j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NaL-Zi-nUJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="126"/>
+        </scene>
+    </scenes>
+</document>
